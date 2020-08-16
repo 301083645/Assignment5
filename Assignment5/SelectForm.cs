@@ -27,5 +27,12 @@ namespace Assignment5
             Program.productInfoForm.Show();
             this.Hide();
         }
+
+        private void SelectForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dollarComputersDataSet.Products' table. You can move, or remove it, as needed.
+            this.productsTableAdapter.Fill(this.dollarComputersDataSet.Products);
+
+        }
     }
 }
