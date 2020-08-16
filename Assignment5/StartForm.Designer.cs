@@ -41,6 +41,7 @@
             this.ToSelectFormButton.TabIndex = 0;
             this.ToSelectFormButton.Text = "Start a new order";
             this.ToSelectFormButton.UseVisualStyleBackColor = true;
+            this.ToSelectFormButton.Click += new System.EventHandler(this.ToSelectFormButton_Click);
             // 
             // ToProductInfoFormButton
             // 
@@ -50,6 +51,7 @@
             this.ToProductInfoFormButton.TabIndex = 1;
             this.ToProductInfoFormButton.Text = "Load a saved order";
             this.ToProductInfoFormButton.UseVisualStyleBackColor = true;
+            this.ToProductInfoFormButton.Click += new System.EventHandler(this.ToProductInfoFormButton_Click);
             // 
             // StartFormExitButton
             // 
@@ -59,6 +61,7 @@
             this.StartFormExitButton.TabIndex = 2;
             this.StartFormExitButton.Text = "Exit the program";
             this.StartFormExitButton.UseVisualStyleBackColor = true;
+            this.StartFormExitButton.Click += new System.EventHandler(this.StartFormExitButton_Click);
             // 
             // StartForm
             // 

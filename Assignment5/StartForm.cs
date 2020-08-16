@@ -21,5 +21,22 @@ namespace Assignment5
         {
 
         }
+
+        private void StartFormExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ToSelectFormButton_Click(object sender, EventArgs e)
+        {
+            Program.selectForm.Show();
+            this.Hide();
+        }
+
+        private void ToProductInfoFormButton_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
     }
 }

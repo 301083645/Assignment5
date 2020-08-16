@@ -6,8 +6,11 @@ using System.Windows.Forms;
 
 namespace Assignment5
 {
-    static class Program
+    public static class Program
     {
+        public static StartForm startForm;
+        public static SelectForm selectForm;
+        public static ProductInfoForm productInfoForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,12 @@ namespace Assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+
+            startForm = new StartForm();
+            selectForm = new SelectForm();
+            productInfoForm = new ProductInfoForm();
+            
+            Application.Run(startForm);
         }
     }
 }
