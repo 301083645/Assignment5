@@ -8,6 +8,7 @@ namespace Assignment5
 {
     public static class Program
     {
+        public static List<Product> products;
         public static StartForm startForm;
         public static SelectForm selectForm;
         public static ProductInfoForm productInfoForm;
@@ -17,6 +18,7 @@ namespace Assignment5
         [STAThread]
         static void Main()
         {
+            products = new List<Product>();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
