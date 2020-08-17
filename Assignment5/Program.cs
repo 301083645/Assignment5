@@ -8,20 +8,22 @@ namespace Assignment5
 {
     public static class Program
     {
-        public static List<Product> products;
+        
         public static StartForm startForm;
         public static SelectForm selectForm;
         public static ProductInfoForm productInfoForm;
+        public static Product selectedProduct;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            products = new List<Product>();
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            selectedProduct = new Product();
             startForm = new StartForm();
             selectForm = new SelectForm();
             productInfoForm = new ProductInfoForm();

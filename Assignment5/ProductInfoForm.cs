@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assignment5.DollarComputersDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,12 @@ namespace Assignment5
         {
             Program.selectForm.Show();
             this.Hide();
+        }
+
+        private void ProductInfoForm_Activated(object sender, EventArgs e)
+        {
+           
+
         }
     }
 }
