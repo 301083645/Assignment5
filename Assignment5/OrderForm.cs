@@ -17,17 +17,20 @@ namespace Assignment5
             InitializeComponent();
         }
 
+        // close
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // back to ProductInfoForm
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.productInfoForm.Show();
             this.Hide();
         }
 
+        // back to ProductInfoForm
         private void oBackButton_Click(object sender, EventArgs e)
         {
             ResetForm();
@@ -35,6 +38,7 @@ namespace Assignment5
             this.Hide();
         }
 
+        // Reset the form
         private void ResetForm()
         {
             oConditionTextBox.Clear();
@@ -57,6 +61,7 @@ namespace Assignment5
 
         }
 
+        // call the data
         private void OrderForm_Load(object sender, EventArgs e)
         {
             oConditionTextBox.Text = Program.selectedProduct.condition;
@@ -82,12 +87,13 @@ namespace Assignment5
         }
 
 
-
+        // exit the application
         private void oCancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // set the page
         private void OrderForm_Activated(object sender, EventArgs e)
         {
             oConditionTextBox.Text = Program.selectedProduct.condition;

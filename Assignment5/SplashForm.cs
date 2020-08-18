@@ -17,6 +17,7 @@ namespace Assignment5
             InitializeComponent();
         }
 
+        // move to the startform and turn off the timer
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             Program.startForm.Show();

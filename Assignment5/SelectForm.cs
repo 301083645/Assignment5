@@ -18,17 +18,20 @@ namespace Assignment5
             InitializeComponent();
         }
 
+        // exit the program;
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // move to the productInfoForm;
         private void NextButton_Click(object sender, EventArgs e)
         {
             Program.productInfoForm.Show();
             this.Hide();
         }
 
+        // get data from db;
         private void SelectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.Products' table. You can move, or remove it, as needed.
@@ -102,6 +105,7 @@ namespace Assignment5
 
         }
 
+        // get all the data from one line 
         private void ProductsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Program.selectedProduct.productID = (short)(ProductsDataGridView.SelectedRows[0].Cells[0].Value);

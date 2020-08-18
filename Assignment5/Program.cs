@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * App name         : Dollar Computers
+ * Author's name    : Eunbee Lee
+ * Student ID       : 301083645
+ * App Creation Date: Aug 15, 2020
+ * App description  : A program that generate list of computers for sale and store the data 
+ *                    that you chose and load the data you saved it. 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +17,7 @@ namespace Assignment5
 {
     public static class Program
     {
+        // public static 
         public static SplashForm splashForm;
         public static StartForm startForm;
         public static SelectForm selectForm;
@@ -25,6 +35,7 @@ namespace Assignment5
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            // create 
             splashForm = new SplashForm();
             selectedProduct = new Product();
             startForm = new StartForm();

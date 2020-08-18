@@ -560,6 +560,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ControlBox = false;
             this.Controls.Add(this.oFinishButton);
             this.Controls.Add(this.oCancelButton);
             this.Controls.Add(this.oBackButton);

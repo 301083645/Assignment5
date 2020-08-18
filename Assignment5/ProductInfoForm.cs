@@ -24,11 +24,13 @@ namespace Assignment5
             InitializeComponent();
         }
 
+        // exit the program;
         private void PICancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // back to SelectForm;
         private void PIBackButton_Click(object sender, EventArgs e)
         {
             ResetForm();
@@ -36,6 +38,7 @@ namespace Assignment5
             this.Hide();
         }
 
+        // set the page;
         private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
 
@@ -58,18 +61,20 @@ namespace Assignment5
 
 
         }
-
+        // Exit the program;
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // move to selectForm
         private void selectAnotherProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.selectForm.Show();
             this.Hide();
         }
 
+        // load the data
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -153,6 +158,7 @@ namespace Assignment5
 
         }
 
+        // save the data;
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // configure the save file dialog
@@ -211,6 +217,7 @@ namespace Assignment5
 
         }
 
+        // set the data into the text box;
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
             
@@ -236,6 +243,7 @@ namespace Assignment5
 
         }
 
+        // reset the form;
         private void ResetForm()
         {
             ProductIDTextBox.Clear(); 
@@ -257,6 +265,7 @@ namespace Assignment5
 
         }
 
+        // move to the orderForm;
         private void PINextButton_Click(object sender, EventArgs e)
         {
             

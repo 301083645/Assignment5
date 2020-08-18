@@ -17,22 +17,21 @@ namespace Assignment5
             InitializeComponent();
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
+        // exit the application
         private void StartFormExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //move to the selectForm;
         private void ToSelectFormButton_Click(object sender, EventArgs e)
         {
             Program.selectForm.Show();
             this.Hide();
         }
 
+        // move to the productInfoForm;
         private void ToProductInfoFormButton_Click(object sender, EventArgs e)
         {
             Program.productInfoForm.Show();
