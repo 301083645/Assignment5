@@ -30,6 +30,7 @@ namespace Assignment5
         {
          SplashFormTimer.Enabled = true;
         }
+
         
     }
 }

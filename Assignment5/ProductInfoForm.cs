@@ -254,5 +254,19 @@ namespace Assignment5
             WebCamTextBox.Clear();
 
         }
+
+        private void PINextButton_Click(object sender, EventArgs e)
+        {
+            if (CostTextBox.Text != null)
+            {
+                PINextButton.Enabled = true;
+                Program.orderForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                PINextButton.Enabled = false;
+            }
+        }
     }
 }

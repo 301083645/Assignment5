@@ -36,6 +36,7 @@ namespace Assignment5
         private void ToProductInfoFormButton_Click(object sender, EventArgs e)
         {
             Program.productInfoForm.Show();
+            
             this.Hide();
         }
     }
