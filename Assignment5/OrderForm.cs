@@ -117,5 +117,11 @@ namespace Assignment5
             double total = cost + tax;
             oTotalTextBox.Text = total.ToString();
         }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Program.aboutBoxForm.Show();
+
+        }
     }
 }
