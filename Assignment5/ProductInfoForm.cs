@@ -230,8 +230,10 @@ namespace Assignment5
             CPUTypeTextBox.Text = Program.selectedProduct.CPU_type;
             CPUSpeedTextBox.Text = Program.selectedProduct.CPU_speed;
             WebCamTextBox.Text = Program.selectedProduct.webcam;
+
             
-            
+
+
         }
 
         private void ResetForm()
@@ -257,16 +259,10 @@ namespace Assignment5
 
         private void PINextButton_Click(object sender, EventArgs e)
         {
-            if (CostTextBox.Text != null)
-            {
-                PINextButton.Enabled = true;
+            
                 Program.orderForm.Show();
                 this.Hide();
-            }
-            else
-            {
-                PINextButton.Enabled = false;
-            }
+            
         }
     }
 }
