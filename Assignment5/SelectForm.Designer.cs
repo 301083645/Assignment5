@@ -68,6 +68,7 @@
             this.productsTableAdapter = new Assignment5.DollarComputersDataSetTableAdapters.ProductsTableAdapter();
             this.YourSelectionLabel = new System.Windows.Forms.Label();
             this.SelectionTextBox = new System.Windows.Forms.TextBox();
+            this.HardwareListLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
@@ -430,12 +431,24 @@
             this.SelectionTextBox.Size = new System.Drawing.Size(414, 30);
             this.SelectionTextBox.TabIndex = 4;
             // 
+            // HardwareListLabel
+            // 
+            this.HardwareListLabel.BackColor = System.Drawing.Color.White;
+            this.HardwareListLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HardwareListLabel.ForeColor = System.Drawing.Color.Black;
+            this.HardwareListLabel.Location = new System.Drawing.Point(17, 13);
+            this.HardwareListLabel.Name = "HardwareListLabel";
+            this.HardwareListLabel.Size = new System.Drawing.Size(388, 33);
+            this.HardwareListLabel.TabIndex = 5;
+            this.HardwareListLabel.Text = "Dollar Computer Hardware List";
+            // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.ControlBox = false;
+            this.Controls.Add(this.HardwareListLabel);
             this.Controls.Add(this.SelectionTextBox);
             this.Controls.Add(this.YourSelectionLabel);
             this.Controls.Add(this.ProductsDataGridView);
@@ -498,5 +511,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn webcamDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label YourSelectionLabel;
         private System.Windows.Forms.TextBox SelectionTextBox;
+        private System.Windows.Forms.Label HardwareListLabel;
     }
 }

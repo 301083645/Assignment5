@@ -8,11 +8,12 @@ namespace Assignment5
 {
     public static class Program
     {
-        
+        public static SplashForm splashForm;
         public static StartForm startForm;
         public static SelectForm selectForm;
         public static ProductInfoForm productInfoForm;
         public static Product selectedProduct;
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -23,12 +24,14 @@ namespace Assignment5
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            splashForm = new SplashForm();
             selectedProduct = new Product();
             startForm = new StartForm();
             selectForm = new SelectForm();
             productInfoForm = new ProductInfoForm();
             
-            Application.Run(startForm);
+            
+            Application.Run(splashForm);
         }
     }
 }
