@@ -74,6 +74,7 @@
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
+            this.Load += new System.EventHandler(this.SplashForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

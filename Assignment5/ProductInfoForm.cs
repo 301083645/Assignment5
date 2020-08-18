@@ -80,7 +80,7 @@ namespace Assignment5
 
             var openFileDialogResult = ProductInfoOpenFile.ShowDialog();
 
-            string no = null;
+            string check = null;
 
             if (openFileDialogResult != DialogResult.Cancel)
             {
@@ -91,6 +91,7 @@ namespace Assignment5
 
                 // clear content from TextBoxes
                 ResetForm();
+
                 
                 // read in the list
                 while (!streamReader.EndOfStream)
@@ -115,9 +116,9 @@ namespace Assignment5
                     product.CPU_type = streamReader.ReadLine();
                     product.CPU_speed = streamReader.ReadLine();
                     product.webcam = streamReader.ReadLine();
+                    check = streamReader.ReadLine();
 
-                    
-                    
+                    Debug.WriteLine("check:" + check);
 
                     Products.Add(product); // add our new contact to the Contacts List
                 }
@@ -128,10 +129,8 @@ namespace Assignment5
 
             }
 
-            int productNo2 = Convert.ToInt32(no);
-            //int productNo = productNo2 - 1;
-            int productNo = 9;
-            Debug.WriteLine(productNo);
+            int productNo = Convert.ToInt32(check) - 1;
+
 
             ProductIDTextBox.Text = Products[productNo].productID.ToString();
             ConditionTextBox.Text = (Products[productNo].condition).ToString();
@@ -174,6 +173,8 @@ namespace Assignment5
 
                     foreach (var product in products)
                     {
+                       
+
                         streamWriter.WriteLine(product.productID.ToString());
                         streamWriter.WriteLine(product.condition);
                         streamWriter.WriteLine(product.cost.ToString());
@@ -190,8 +191,17 @@ namespace Assignment5
                         streamWriter.WriteLine(product.CPU_type);
                         streamWriter.WriteLine(product.CPU_speed);
                         streamWriter.WriteLine(product.webcam);
+                        streamWriter.WriteLine(ProductIDTextBox.Text);
+
                     }
+
+                    
+
+
                 }
+                        
+                    
+                
 
                         //clean up
                         streamWriter.Flush();

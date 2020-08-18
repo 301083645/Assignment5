@@ -24,5 +24,12 @@ namespace Assignment5
             SplashFormTimer.Enabled = false;
 
         }
+
+        
+        private void SplashForm_Load(object sender, EventArgs e)
+        {
+         SplashFormTimer.Enabled = true;
+        }
+        
     }
 }
