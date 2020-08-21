@@ -269,22 +269,6 @@ namespace Assignment5
         private void PINextButton_Click(object sender, EventArgs e)
         {
 
-             Program.selectedProduct.condition = ConditionTextBox.Text;
-             Program.selectedProduct.platform = PlatformTextBox.Text;
-             Program.selectedProduct.manufacturer = ManufacturerTextBox.Text;
-             Program.selectedProduct.model = ModelTextBox.Text;
-             Program.selectedProduct.screensize = LCDSizeTextBox.Text;
-             Program.selectedProduct.RAM_size = MemoryTextBox.Text;
-             Program.selectedProduct.CPU_brand = CPUBrandTextBox.Text;
-             Program.selectedProduct.CPU_number = CPUNumberTextBox.Text;
-             Program.selectedProduct.CPU_speed = CPUSpeedTextBox.Text;
-             Program.selectedProduct.CPU_type = CPUTypeTextBox.Text;
-             Program.selectedProduct.HDD_size = HDDTextBox.Text;
-             Program.selectedProduct.GPU_Type = GPUTypeTextBox.Text;
-             Program.selectedProduct.webcam = WebCamTextBox.Text;
-             Program.selectedProduct.OS = OSTextBox.Text;
-             Program.selectedProduct.cost = Convert.ToInt16(CostTextBox.Text);
-
             Program.orderForm.Show();
                 this.Hide();
             
