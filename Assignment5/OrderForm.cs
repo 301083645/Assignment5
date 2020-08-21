@@ -79,7 +79,7 @@ namespace Assignment5
             oWebCamTextBox.Text = Program.selectedProduct.webcam;
             oOSTextBox.Text = Program.selectedProduct.OS;
             oCostTextBox.Text = Program.selectedProduct.cost.ToString();
-            double cost = Convert.ToDouble(oCostTextBox.Text);
+            double cost = Convert.ToDouble(Program.selectedProduct.cost);
             double tax = cost * 0.13;
             oTaxTextBox.Text = tax.ToString();
             double total = cost + tax;
@@ -111,7 +111,7 @@ namespace Assignment5
             oWebCamTextBox.Text = Program.selectedProduct.webcam;
             oOSTextBox.Text = Program.selectedProduct.OS;
             oCostTextBox.Text = Program.selectedProduct.cost.ToString();
-            double cost = Convert.ToDouble(oCostTextBox.Text);
+            double cost = Convert.ToDouble(Program.selectedProduct.cost);
             double tax = cost * 0.13;
             oTaxTextBox.Text = tax.ToString();
             double total = cost + tax;
@@ -127,6 +127,11 @@ namespace Assignment5
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.printMessageBox.Show();
+        }
+
+        private void oFinishButton_Click(object sender, EventArgs e)
+        {
+            Program.finishMessageBox.Show();
         }
     }
 }

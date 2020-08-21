@@ -26,6 +26,7 @@ namespace Assignment5
         public static OrderForm orderForm;
         public static AboutBoxForm aboutBoxForm;
         public static PrintMessageBox printMessageBox;
+        public static FinishMessageBox finishMessageBox;
         
         /// <summary>
         /// The main entry point for the application.
@@ -46,6 +47,7 @@ namespace Assignment5
             orderForm = new OrderForm();
             aboutBoxForm = new AboutBoxForm();
             printMessageBox = new PrintMessageBox();
+            finishMessageBox = new FinishMessageBox();
             
             
             Application.Run(splashForm);

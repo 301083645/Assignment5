@@ -73,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinishMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishMessageBox.Designer.cs">
+      <DependentUpon>FinishMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutBoxForm.resx">
       <DependentUpon>AboutBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishMessageBox.resx">
+      <DependentUpon>FinishMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>

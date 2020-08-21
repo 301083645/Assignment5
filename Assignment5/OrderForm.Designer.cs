@@ -558,6 +558,7 @@
             this.oFinishButton.TabIndex = 5;
             this.oFinishButton.Text = "Finish";
             this.oFinishButton.UseVisualStyleBackColor = true;
+            this.oFinishButton.Click += new System.EventHandler(this.oFinishButton_Click);
             // 
             // pictureBox1
             // 
