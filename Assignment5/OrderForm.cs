@@ -123,5 +123,10 @@ namespace Assignment5
             Program.aboutBoxForm.Show();
 
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.printMessageBox.Show();
+        }
     }
 }

@@ -25,6 +25,7 @@ namespace Assignment5
         public static Product selectedProduct;
         public static OrderForm orderForm;
         public static AboutBoxForm aboutBoxForm;
+        public static PrintMessageBox printMessageBox;
         
         /// <summary>
         /// The main entry point for the application.
@@ -44,6 +45,7 @@ namespace Assignment5
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
             aboutBoxForm = new AboutBoxForm();
+            printMessageBox = new PrintMessageBox();
             
             
             Application.Run(splashForm);
